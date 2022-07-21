@@ -3,7 +3,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: dockerfile.dev
+      dockerfile: Dokerfile.dev
     ports:
       - "3000:3000"
     volumes:
