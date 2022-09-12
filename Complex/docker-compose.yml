@@ -5,7 +5,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres_password
   redis:
-    redis: 'redis:latest'
+    image: 'redis:latest'
   server:
     build: 
       dockerfile: Dockerfile.dev
