@@ -8,8 +8,9 @@ services:
     image: 'redis:latest'
   server:
     build:
-      dockerfile: Dockerfile.dev
       context: ./server
+      dockerfile: Dockerfile.dev
+      
     volumes:
       - /app/node_modules
       - ./server:/app
