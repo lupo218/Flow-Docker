@@ -39,7 +39,7 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
   nginx:
-    retsrat: always
+    restart: always
     build:
       dockerfile: Dockerfile.dev
       context: ./worker
